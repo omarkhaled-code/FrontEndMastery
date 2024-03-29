@@ -1,8 +1,25 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: white;
+  background: #ff6600;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #ff6600;
+    color: #ff6600;
+    background: transparent;
+  }
 }

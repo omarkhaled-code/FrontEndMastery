@@ -1,17 +1,16 @@
 <template>
-  <div class="about">
-    <AboutSection />
+  <div class="blog">
+    <SectionTitle title="Blogs Page" paragraph="Welcome To our blogs page" />
   </div>
 </template>
-
 <script>
 import SectionTitle from "@/components/SectionTitle.vue";
-import AboutSection from "@/components/AboutSection.vue";
+
 export default {
-  name: "AboutView",
+  name: "BlogsView",
   components: {
     SectionTitle,
-    AboutSection,
   },
 };
 </script>
+<style></style>

@@ -1,17 +1,19 @@
 <template>
-  <div class="about">
-    <AboutSection />
+  <div class="contact">
+    <SectionTitle
+      title="Contact Page"
+      paragraph="Welcome To our contact page"
+    />
   </div>
 </template>
-
 <script>
 import SectionTitle from "@/components/SectionTitle.vue";
-import AboutSection from "@/components/AboutSection.vue";
+
 export default {
-  name: "AboutView",
+  name: "ContactView",
   components: {
     SectionTitle,
-    AboutSection,
   },
 };
 </script>
+<style></style>

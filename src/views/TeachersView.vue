@@ -1,17 +1,19 @@
 <template>
-  <div class="about">
-    <AboutSection />
+  <div class="teachers">
+    <SectionTitle
+      title="Teachers Page"
+      paragraph="Welcome To our teachers page"
+    />
   </div>
 </template>
-
 <script>
 import SectionTitle from "@/components/SectionTitle.vue";
-import AboutSection from "@/components/AboutSection.vue";
+
 export default {
-  name: "AboutView",
+  name: "TeachersView",
   components: {
     SectionTitle,
-    AboutSection,
   },
 };
 </script>
+<style></style>
