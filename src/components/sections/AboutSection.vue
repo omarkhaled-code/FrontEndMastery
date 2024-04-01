@@ -14,6 +14,7 @@
         sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum
         stet
       </p>
+
       <button class="btn">Learn More</button>
     </div>
   </section>

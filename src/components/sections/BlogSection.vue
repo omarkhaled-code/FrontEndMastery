@@ -1,0 +1,67 @@
+<template>
+  <section>
+    <SectionTitle title="Our Blog" paragraph="Latest From Our Blog" />
+    <div class="blogs">
+      <div class="blog">
+        <img src="@/assets/blog-3.jpg" alt="" />
+        <div class="info">
+          <h3 class="title">
+            Lorem elitr magna stet eirmod labore amet labore clita at ut clita
+          </h3>
+          <p class="time">Jan 01, 2050</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import SectionTitle from "@/components/SectionTitle.vue";
+
+export default {
+  name: "BlogSection",
+  components: {
+    SectionTitle,
+  },
+};
+</script>
+<style lang="scss" scoped>
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  .blog {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: green;
+    filter: brightness(0.9);
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      filter: brightness(0.6);
+    }
+    .info {
+      position: absolute;
+      z-index: 3;
+      bottom: 25px;
+      text-align: left;
+      padding: 0px 20px;
+      h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: white;
+      }
+      p {
+        color: #ff6600;
+      }
+    }
+  }
+}
+</style>

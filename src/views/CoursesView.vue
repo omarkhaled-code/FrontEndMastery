@@ -1,19 +1,10 @@
 <template>
-  <div class="courses">
-    <SectionTitle
-      title="Courses Page"
-      paragraph="Welcome To our courses page"
-    />
-  </div>
+  <div class="courses"></div>
 </template>
 <script>
-import SectionTitle from "@/components/SectionTitle.vue";
-
 export default {
   name: "CoursesView",
-  components: {
-    SectionTitle,
-  },
+  components: {},
 };
 </script>
 <style lang=""></style>

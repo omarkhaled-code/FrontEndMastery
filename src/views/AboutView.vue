@@ -5,12 +5,10 @@
 </template>
 
 <script>
-import SectionTitle from "@/components/SectionTitle.vue";
-import AboutSection from "@/components/AboutSection.vue";
+import AboutSection from "@/components/sections/AboutSection.vue";
 export default {
   name: "AboutView",
   components: {
-    SectionTitle,
     AboutSection,
   },
 };

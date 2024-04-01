@@ -19,6 +19,8 @@ export default {
 .title {
   text-transform: uppercase;
   margin: 10px auto;
+
+  margin-bottom: 50px;
   h4 {
     color: #ff6600;
     margin-bottom: 10px;
