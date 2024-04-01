@@ -1,82 +1,75 @@
 <template>
-  <section>
-    <SectionTitle title="Subjects" paragraph="Explore Top Subjects" />
-    <div class="category">
-      <router-link to="/courses" class="course">
-        <img src="@/assets/cat-1.jpg" alt="" />
+  <div class="category">
+    <router-link to="/courses" class="course">
+      <img src="@/assets/cat-1.jpg" alt="" />
 
-        <div class="info">
-          <h3>Web Design</h3>
-          <p>100 courses</p>
-        </div>
-      </router-link>
-      <router-link to="/courses" class="course">
-        <img src="@/assets/cat-2.jpg" alt="" />
+      <div class="info">
+        <h3>Web Design</h3>
+        <p>100 courses</p>
+      </div>
+    </router-link>
+    <router-link to="/courses" class="course">
+      <img src="@/assets/cat-2.jpg" alt="" />
 
-        <div class="info">
-          <h3>Web Develope</h3>
-          <p>100 courses</p>
-        </div>
-      </router-link>
-      <router-link to="/courses" class="course">
-        <img src="@/assets/cat-3.jpg" alt="" />
+      <div class="info">
+        <h3>Web Develope</h3>
+        <p>100 courses</p>
+      </div>
+    </router-link>
+    <router-link to="/courses" class="course">
+      <img src="@/assets/cat-3.jpg" alt="" />
 
-        <div class="info">
-          <h3>App Design</h3>
-          <p>100 courses</p>
-        </div>
-      </router-link>
-      <router-link to="/courses" class="course">
-        <img src="@/assets/cat-4.jpg" alt="" />
+      <div class="info">
+        <h3>App Design</h3>
+        <p>100 courses</p>
+      </div>
+    </router-link>
+    <router-link to="/courses" class="course">
+      <img src="@/assets/cat-4.jpg" alt="" />
 
-        <div class="info">
-          <h3>Web Design</h3>
-          <p>100 courses</p>
-        </div>
-      </router-link>
-      <router-link to="/courses" class="course">
-        <img src="@/assets/cat-5.jpg" alt="" />
+      <div class="info">
+        <h3>Web Design</h3>
+        <p>100 courses</p>
+      </div>
+    </router-link>
+    <router-link to="/courses" class="course">
+      <img src="@/assets/cat-5.jpg" alt="" />
 
-        <div class="info">
-          <h3>Web Design</h3>
-          <p>100 courses</p>
-        </div>
-      </router-link>
-      <router-link to="/courses" class="course">
-        <img src="@/assets/cat-6.jpg" alt="" />
+      <div class="info">
+        <h3>Web Design</h3>
+        <p>100 courses</p>
+      </div>
+    </router-link>
+    <router-link to="/courses" class="course">
+      <img src="@/assets/cat-6.jpg" alt="" />
 
-        <div class="info">
-          <h3>Web Design</h3>
-          <p>100 courses</p>
-        </div>
-      </router-link>
-      <router-link to="/courses" class="course">
-        <img src="@/assets/cat-7.jpg" alt="" />
+      <div class="info">
+        <h3>Web Design</h3>
+        <p>100 courses</p>
+      </div>
+    </router-link>
+    <router-link to="/courses" class="course">
+      <img src="@/assets/cat-7.jpg" alt="" />
 
-        <div class="info">
-          <h3>Web Design</h3>
-          <p>100 courses</p>
-        </div>
-      </router-link>
-      <router-link to="/courses" class="course">
-        <img src="@/assets/cat-8.jpg" alt="" />
+      <div class="info">
+        <h3>Web Design</h3>
+        <p>100 courses</p>
+      </div>
+    </router-link>
+    <router-link to="/courses" class="course">
+      <img src="@/assets/cat-8.jpg" alt="" />
 
-        <div class="info">
-          <h3>Web Design</h3>
-          <p>100 courses</p>
-        </div>
-      </router-link>
-    </div>
-  </section>
+      <div class="info">
+        <h3>Web Design</h3>
+        <p>100 courses</p>
+      </div>
+    </router-link>
+  </div>
 </template>
 <script>
-import SectionTitle from "@/components/SectionTitle.vue";
-
 export default {
   name: "CategorySection",
-  components: {
-    SectionTitle,
-  },
+  components: {},
 };
 </script>
 <style lang="scss">

@@ -1,106 +1,99 @@
 <template>
-  <section>
-    <SectionTitle title="Teachers" paragraph="Meet Our Teachers" />
-    <div class="teachers">
-      <div class="teacher">
-        <div class="img">
-          <RouterLink to="/teachers/4">
-            <img src="@/assets/team-4.jpg" alt="team" />
-          </RouterLink>
-          <div class="icons">
-            <router-link to="https://facebook.com">
-              <i>O</i>
-            </router-link>
-            <router-link to="https://instgram.com">
-              <i>O</i>
-            </router-link>
-            <router-link to="https://omarkhaled-code@github.com">
-              <i>O</i>
-            </router-link>
-          </div>
-        </div>
-        <div class="info">
-          <h3>Jhon Doe</h3>
-          <p>Web Designer</p>
+  <div class="teachers">
+    <div class="teacher">
+      <div class="img">
+        <RouterLink to="/teachers/4">
+          <img src="@/assets/team-4.jpg" alt="team" />
+        </RouterLink>
+        <div class="icons">
+          <router-link to="https://facebook.com">
+            <i>O</i>
+          </router-link>
+          <router-link to="https://instgram.com">
+            <i>O</i>
+          </router-link>
+          <router-link to="https://omarkhaled-code@github.com">
+            <i>O</i>
+          </router-link>
         </div>
       </div>
-      <div class="teacher">
-        <div class="img">
-          <RouterLink to="/teachers/4">
-            <img src="@/assets/team-1.jpg" alt="team" />
-          </RouterLink>
-          <div class="icons">
-            <router-link to="https://facebook.com">
-              <i>O</i>
-            </router-link>
-            <router-link to="https://instgram.com">
-              <i>O</i>
-            </router-link>
-            <router-link to="https://omarkhaled-code@github.com">
-              <i>O</i>
-            </router-link>
-          </div>
-        </div>
-        <div class="info">
-          <h3>Jhon Doe</h3>
-          <p>Web Designer</p>
-        </div>
-      </div>
-      <div class="teacher">
-        <div class="img">
-          <RouterLink to="/teachers/4">
-            <img src="@/assets/team-2.jpg" alt="team" />
-          </RouterLink>
-          <div class="icons">
-            <router-link to="https://facebook.com">
-              <i>O</i>
-            </router-link>
-            <router-link to="https://instgram.com">
-              <i>O</i>
-            </router-link>
-            <router-link to="https://omarkhaled-code@github.com">
-              <i>O</i>
-            </router-link>
-          </div>
-        </div>
-        <div class="info">
-          <h3>Jhon Doe</h3>
-          <p>Web Designer</p>
-        </div>
-      </div>
-      <div class="teacher">
-        <div class="img">
-          <RouterLink to="/teachers/4">
-            <img src="@/assets/team-3.jpg" alt="team" />
-          </RouterLink>
-          <div class="icons">
-            <router-link to="https://facebook.com">
-              <i>O</i>
-            </router-link>
-            <router-link to="https://instgram.com">
-              <i>O</i>
-            </router-link>
-            <router-link to="https://omarkhaled-code@github.com">
-              <i>O</i>
-            </router-link>
-          </div>
-        </div>
-        <div class="info">
-          <h3>Jhon Doe</h3>
-          <p>Web Designer</p>
-        </div>
+      <div class="info">
+        <h3>Jhon Doe</h3>
+        <p>Web Designer</p>
       </div>
     </div>
-  </section>
+    <div class="teacher">
+      <div class="img">
+        <RouterLink to="/teachers/4">
+          <img src="@/assets/team-1.jpg" alt="team" />
+        </RouterLink>
+        <div class="icons">
+          <router-link to="https://facebook.com">
+            <i>O</i>
+          </router-link>
+          <router-link to="https://instgram.com">
+            <i>O</i>
+          </router-link>
+          <router-link to="https://omarkhaled-code@github.com">
+            <i>O</i>
+          </router-link>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Jhon Doe</h3>
+        <p>Web Designer</p>
+      </div>
+    </div>
+    <div class="teacher">
+      <div class="img">
+        <RouterLink to="/teachers/4">
+          <img src="@/assets/team-2.jpg" alt="team" />
+        </RouterLink>
+        <div class="icons">
+          <router-link to="https://facebook.com">
+            <i>O</i>
+          </router-link>
+          <router-link to="https://instgram.com">
+            <i>O</i>
+          </router-link>
+          <router-link to="https://omarkhaled-code@github.com">
+            <i>O</i>
+          </router-link>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Jhon Doe</h3>
+        <p>Web Designer</p>
+      </div>
+    </div>
+    <div class="teacher">
+      <div class="img">
+        <RouterLink to="/teachers/4">
+          <img src="@/assets/team-3.jpg" alt="team" />
+        </RouterLink>
+        <div class="icons">
+          <router-link to="https://facebook.com">
+            <i>O</i>
+          </router-link>
+          <router-link to="https://instgram.com">
+            <i>O</i>
+          </router-link>
+          <router-link to="https://omarkhaled-code@github.com">
+            <i>O</i>
+          </router-link>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Jhon Doe</h3>
+        <p>Web Designer</p>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
-import SectionTitle from "@/components/SectionTitle.vue";
-
 export default {
   name: "TeachersSection",
-  components: {
-    SectionTitle,
-  },
+  components: {},
 };
 </script>
 <style lang="scss" scoped>
@@ -111,7 +104,7 @@ export default {
 
   .teacher {
     width: 250px;
-    height: 300px;
+    height: 350px;
     border-radius: 10px;
     background: #f2f1f8;
     overflow: hidden;
@@ -120,7 +113,7 @@ export default {
       transition: 0.5s;
       img {
         width: 100%;
-        height: 200px;
+        height: 250px;
         transition: 0.3s;
       }
       &:hover {

@@ -1,52 +1,45 @@
 <template>
-  <section>
-    <SectionTitle title="Our Blog" paragraph="Latest From Our Blog" />
-    <div class="blogs">
-      <div class="blog">
-        <router-link to="/#">
-          <img src="@/assets/blog-3.jpg" alt="" />
-        </router-link>
-        <div class="info">
-          <h3 class="title">
-            Lorem elitr magna stet eirmod labore amet labore clita at ut clita
-          </h3>
-          <p class="time">Jan 01, 2050</p>
-        </div>
-      </div>
-      <div class="blog">
-        <router-link to="/#">
-          <img src="@/assets/blog-1.jpg" alt="" />
-        </router-link>
-        <div class="info">
-          <h3 class="title">
-            Lorem elitr magna stet eirmod labore amet labore clita at ut clita
-          </h3>
-          <p class="time">Jan 01, 2050</p>
-        </div>
-      </div>
-      <div class="blog">
-        <router-link to="/#">
-          <img src="@/assets/blog-2.jpg" alt="" />
-        </router-link>
-        <div class="info">
-          <h3 class="title">
-            Lorem elitr magna stet eirmod labore amet labore clita at ut clita
-          </h3>
-          <p class="time">Jan 01, 2050</p>
-        </div>
+  <div class="blogs">
+    <div class="blog">
+      <router-link to="/#">
+        <img src="@/assets/blog-3.jpg" alt="" />
+      </router-link>
+      <div class="info">
+        <h3 class="title">
+          Lorem elitr magna stet eirmod labore amet labore clita at ut clita
+        </h3>
+        <p class="time">Jan 01, 2050</p>
       </div>
     </div>
-  </section>
+    <div class="blog">
+      <router-link to="/#">
+        <img src="@/assets/blog-1.jpg" alt="" />
+      </router-link>
+      <div class="info">
+        <h3 class="title">
+          Lorem elitr magna stet eirmod labore amet labore clita at ut clita
+        </h3>
+        <p class="time">Jan 01, 2050</p>
+      </div>
+    </div>
+    <div class="blog">
+      <router-link to="/#">
+        <img src="@/assets/blog-2.jpg" alt="" />
+      </router-link>
+      <div class="info">
+        <h3 class="title">
+          Lorem elitr magna stet eirmod labore amet labore clita at ut clita
+        </h3>
+        <p class="time">Jan 01, 2050</p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import SectionTitle from "@/components/SectionTitle.vue";
-
 export default {
   name: "BlogSection",
-  components: {
-    SectionTitle,
-  },
+  components: {},
 };
 </script>
 <style lang="scss" scoped>

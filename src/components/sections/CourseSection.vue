@@ -1,144 +1,137 @@
 <template lang="">
-  <section>
-    <SectionTitle title="COURSES" paragraph="Our Popular Courses" />
-    <div class="courses">
-      <div class="course">
-        <RouterLink to="/courses/3">
-          <img src="@/assets/course-6.jpg" alt="" />
-        </RouterLink>
-        <div class="info">
-          <span class="student">25 Students</span>
-          <span class="time"> 01h 30m </span>
-        </div>
-        <div class="title">
-          <RouterLink to="/courses"
-            ><h3>Web design & development courses for beginner</h3></RouterLink
-          >
-        </div>
-        <div class="details">
-          <span class="rating"> 4.5 (255) </span>
-          <span class="price">$90</span>
-        </div>
+  <div class="courses">
+    <div class="course">
+      <RouterLink to="/courses/3">
+        <img src="@/assets/course-6.jpg" alt="" />
+      </RouterLink>
+      <div class="info">
+        <span class="student">25 Students</span>
+        <span class="time"> 01h 30m </span>
       </div>
-      <div class="course">
-        <RouterLink to="/courses">
-          <img src="@/assets/course-5.jpg" alt="" />
-        </RouterLink>
-        <div class="info">
-          <span class="student">25 Students</span>
-          <span class="time"> 01h 30m </span>
-        </div>
-        <div class="title">
-          <RouterLink to="/courses"
-            ><h3>Web design & development courses for beginner</h3></RouterLink
-          >
-        </div>
-        <div class="details">
-          <span class="rating"> 4.5 (255) </span>
-          <span class="price">$90</span>
-        </div>
+      <div class="title">
+        <RouterLink to="/courses"
+          ><h3>Web design & development courses for beginner</h3></RouterLink
+        >
       </div>
-      <div class="course">
-        <RouterLink to="/courses">
-          <img src="@/assets/course-1.jpg" alt="" />
-        </RouterLink>
-        <div class="info">
-          <span class="student">25 Students</span>
-          <span class="time"> 01h 30m </span>
-        </div>
-        <div class="title">
-          <RouterLink to="/courses"
-            ><h3>Web design & development courses for beginner</h3></RouterLink
-          >
-        </div>
-        <div class="details">
-          <span class="rating"> 4.5 (255) </span>
-          <span class="price">$90</span>
-        </div>
-      </div>
-      <div class="course">
-        <RouterLink to="/courses">
-          <img src="@/assets/course-2.jpg" alt="" />
-        </RouterLink>
-        <div class="info">
-          <span class="student">25 Students</span>
-          <span class="time"> 01h 30m </span>
-        </div>
-        <div class="title">
-          <RouterLink to="/courses"
-            ><h3>Web design & development courses for beginner</h3></RouterLink
-          >
-        </div>
-        <div class="details">
-          <span class="rating"> 4.5 (255) </span>
-          <span class="price">$90</span>
-        </div>
-      </div>
-      <div class="course">
-        <RouterLink to="/courses">
-          <img src="@/assets/course-4.jpg" alt="" />
-        </RouterLink>
-        <div class="info">
-          <span class="student">25 Students</span>
-          <span class="time"> 01h 30m </span>
-        </div>
-        <div class="title">
-          <RouterLink to="/courses"
-            ><h3>Web design & development courses for beginner</h3></RouterLink
-          >
-        </div>
-        <div class="details">
-          <span class="rating"> 4.5 (255) </span>
-          <span class="price">$90</span>
-        </div>
-      </div>
-      <div class="course">
-        <RouterLink to="/courses">
-          <img src="@/assets/course-1.jpg" alt="" />
-        </RouterLink>
-        <div class="info">
-          <span class="student">25 Students</span>
-          <span class="time"> 01h 30m </span>
-        </div>
-        <div class="title">
-          <RouterLink to="/courses"
-            ><h3>Web design & development courses for beginner</h3></RouterLink
-          >
-        </div>
-        <div class="details">
-          <span class="rating"> 4.5 (255) </span>
-          <span class="price">$90</span>
-        </div>
-      </div>
-      <div class="course">
-        <RouterLink to="/courses">
-          <img src="@/assets/course-3.jpg" alt="" />
-        </RouterLink>
-        <div class="info">
-          <span class="student">25 Students</span>
-          <span class="time"> 01h 30m </span>
-        </div>
-        <div class="title">
-          <RouterLink to="/courses"
-            ><h3>Web design & development courses for beginner</h3></RouterLink
-          >
-        </div>
-        <div class="details">
-          <span class="rating"> 4.5 (255) </span>
-          <span class="price">$90</span>
-        </div>
+      <div class="details">
+        <span class="rating"> 4.5 (255) </span>
+        <span class="price">$90</span>
       </div>
     </div>
-  </section>
+    <div class="course">
+      <RouterLink to="/courses">
+        <img src="@/assets/course-5.jpg" alt="" />
+      </RouterLink>
+      <div class="info">
+        <span class="student">25 Students</span>
+        <span class="time"> 01h 30m </span>
+      </div>
+      <div class="title">
+        <RouterLink to="/courses"
+          ><h3>Web design & development courses for beginner</h3></RouterLink
+        >
+      </div>
+      <div class="details">
+        <span class="rating"> 4.5 (255) </span>
+        <span class="price">$90</span>
+      </div>
+    </div>
+    <div class="course">
+      <RouterLink to="/courses">
+        <img src="@/assets/course-1.jpg" alt="" />
+      </RouterLink>
+      <div class="info">
+        <span class="student">25 Students</span>
+        <span class="time"> 01h 30m </span>
+      </div>
+      <div class="title">
+        <RouterLink to="/courses"
+          ><h3>Web design & development courses for beginner</h3></RouterLink
+        >
+      </div>
+      <div class="details">
+        <span class="rating"> 4.5 (255) </span>
+        <span class="price">$90</span>
+      </div>
+    </div>
+    <div class="course">
+      <RouterLink to="/courses">
+        <img src="@/assets/course-2.jpg" alt="" />
+      </RouterLink>
+      <div class="info">
+        <span class="student">25 Students</span>
+        <span class="time"> 01h 30m </span>
+      </div>
+      <div class="title">
+        <RouterLink to="/courses"
+          ><h3>Web design & development courses for beginner</h3></RouterLink
+        >
+      </div>
+      <div class="details">
+        <span class="rating"> 4.5 (255) </span>
+        <span class="price">$90</span>
+      </div>
+    </div>
+    <div class="course">
+      <RouterLink to="/courses">
+        <img src="@/assets/course-4.jpg" alt="" />
+      </RouterLink>
+      <div class="info">
+        <span class="student">25 Students</span>
+        <span class="time"> 01h 30m </span>
+      </div>
+      <div class="title">
+        <RouterLink to="/courses"
+          ><h3>Web design & development courses for beginner</h3></RouterLink
+        >
+      </div>
+      <div class="details">
+        <span class="rating"> 4.5 (255) </span>
+        <span class="price">$90</span>
+      </div>
+    </div>
+    <div class="course">
+      <RouterLink to="/courses">
+        <img src="@/assets/course-1.jpg" alt="" />
+      </RouterLink>
+      <div class="info">
+        <span class="student">25 Students</span>
+        <span class="time"> 01h 30m </span>
+      </div>
+      <div class="title">
+        <RouterLink to="/courses"
+          ><h3>Web design & development courses for beginner</h3></RouterLink
+        >
+      </div>
+      <div class="details">
+        <span class="rating"> 4.5 (255) </span>
+        <span class="price">$90</span>
+      </div>
+    </div>
+    <div class="course">
+      <RouterLink to="/courses">
+        <img src="@/assets/course-3.jpg" alt="" />
+      </RouterLink>
+      <div class="info">
+        <span class="student">25 Students</span>
+        <span class="time"> 01h 30m </span>
+      </div>
+      <div class="title">
+        <RouterLink to="/courses"
+          ><h3>Web design & development courses for beginner</h3></RouterLink
+        >
+      </div>
+      <div class="details">
+        <span class="rating"> 4.5 (255) </span>
+        <span class="price">$90</span>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
-import SectionTitle from "@/components/SectionTitle.vue";
-
 export default {
   name: "CoursesSection",
-  components: {
-    SectionTitle,
-  },
+  components: {},
 };
 </script>
 <style lang="scss" scoped>

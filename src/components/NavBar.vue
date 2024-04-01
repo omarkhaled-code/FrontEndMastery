@@ -45,6 +45,8 @@ nav {
   margin: 0px auto;
   height: 65px;
   box-shadow: 1px 0px 6px #ff660060;
+  position: relative;
+  z-index: 10;
   .subject {
     position: relative;
     h4 {

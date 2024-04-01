@@ -1,23 +1,20 @@
 <template>
-  <section class="about-section">
-    <img src="@/assets/about.jpg" alt="about-img" />
-    <div class="info">
-      <h3>About Us</h3>
-      <h2>Innovative Way To Learn</h2>
-      <p>
-        Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum
-        dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat
-        eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum
-        clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit
-        dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore
-        invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed
-        sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum
-        stet
-      </p>
+  <img src="@/assets/about.jpg" alt="about-img" />
+  <div class="info">
+    <h3>About Us</h3>
+    <h2>Innovative Way To Learn</h2>
+    <p>
+      Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum
+      dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat
+      eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita
+      amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita
+      consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no
+      nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum.
+      Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet
+    </p>
 
-      <button class="btn">Learn More</button>
-    </div>
-  </section>
+    <button class="btn">Learn More</button>
+  </div>
 </template>
 <script>
 export default {
