@@ -47,6 +47,7 @@ form {
     color: #5d5d5d;
     font-weight: bold;
     transition: 0.3s;
+    padding: 20px 25px;
     &:focus {
       color: black;
       font-weight: normal;
