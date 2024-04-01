@@ -3,7 +3,31 @@
     <SectionTitle title="Our Blog" paragraph="Latest From Our Blog" />
     <div class="blogs">
       <div class="blog">
-        <img src="@/assets/blog-3.jpg" alt="" />
+        <router-link to="/#">
+          <img src="@/assets/blog-3.jpg" alt="" />
+        </router-link>
+        <div class="info">
+          <h3 class="title">
+            Lorem elitr magna stet eirmod labore amet labore clita at ut clita
+          </h3>
+          <p class="time">Jan 01, 2050</p>
+        </div>
+      </div>
+      <div class="blog">
+        <router-link to="/#">
+          <img src="@/assets/blog-1.jpg" alt="" />
+        </router-link>
+        <div class="info">
+          <h3 class="title">
+            Lorem elitr magna stet eirmod labore amet labore clita at ut clita
+          </h3>
+          <p class="time">Jan 01, 2050</p>
+        </div>
+      </div>
+      <div class="blog">
+        <router-link to="/#">
+          <img src="@/assets/blog-2.jpg" alt="" />
+        </router-link>
         <div class="info">
           <h3 class="title">
             Lorem elitr magna stet eirmod labore amet labore clita at ut clita
@@ -36,8 +60,7 @@ export default {
     height: 350px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: green;
-    filter: brightness(0.9);
+    filter: brightness(0.99);
     img {
       position: absolute;
       left: 0;
