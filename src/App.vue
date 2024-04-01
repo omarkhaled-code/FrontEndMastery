@@ -1,15 +1,18 @@
 <template>
   <NavBar />
-  <router-view/>
+  <router-view />
+  <AppFooter />
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue"
+import NavBar from "@/components/NavBar.vue";
+import AppFooter from "@/components/AppFooter.vue";
 export default {
   components: {
-    NavBar
-  }
-}
+    NavBar,
+    AppFooter,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -29,10 +32,9 @@ nav {
     color: #2c3e50;
     text-decoration: none;
     margin: 0 5px;
-    &.router-link-exact-active, &:hover {
-      color : #FF6600 ;
-      
-
+    &.router-link-exact-active,
+    &:hover {
+      color: #ff6600;
     }
   }
 }

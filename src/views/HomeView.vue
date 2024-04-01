@@ -16,6 +16,7 @@ import CategorySection from "@/components/sections/CategorySection.vue";
 import CourseSection from "@/components/sections/CourseSection.vue";
 import TeacherSection from "@/components/sections/TeacherSection.vue";
 import BlogSection from "@/components/sections/BlogSection.vue";
+
 export default {
   name: "HomeView",
   components: {
