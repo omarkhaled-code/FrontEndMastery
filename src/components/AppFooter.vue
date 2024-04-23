@@ -9,30 +9,30 @@
         <p>+012 345 67890</p>
         <p>info@example.com</p>
         <div class="icons">
-          <router-link to="/#"> <i>H</i> </router-link>
-          <router-link to="/#"> <i>H</i> </router-link>
-          <router-link to="/#"> <i>H</i> </router-link>
-          <router-link to="/#"> <i>H</i> </router-link>
+          <a href="https://facebook.com" target="_blank">
+            <i class="facebook"><fontIcon :icon="['fab', 'facebook']" /></i>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <i class="instagram"><fontIcon :icon="['fab', 'instagram']" /></i>
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="twitter"><fontIcon :icon="['fab', 'twitter']" /></i>
+          </a>
         </div>
       </div>
       <div class="links">
         <div class="header">
-          <h5>Our Courses</h5>
+          <h5>Our Category</h5>
         </div>
-        <li>
-          <router-link to="/#">Web Design</router-link>
-        </li>
-        <li>
-          <router-link to="/#">apps Design</router-link>
-        </li>
-        <li>
-          <router-link to="/#">Marketing</router-link>
-        </li>
-        <li>
-          <router-link to="/#">Research</router-link>
-        </li>
-        <li>
-          <router-link to="/#">SEO</router-link>
+        <li v-for="cat in category" :key="cat.name">
+          <router-link
+            :to="{
+              path: '/category/' + cat.name,
+              state: { id: cat.id },
+            }"
+          >
+            {{ cat.name }}</router-link
+          >
         </li>
       </div>
       <div class="messages">
@@ -45,15 +45,16 @@
           sea justo no lorem est diam
         </p>
 
-        <div class="input">
+        <!-- <div class="input">
           <input
             type="email"
             mailto="omarkhaled12oki@gmail.com"
             placeholder="Your Email Address"
           />
 
-          <button type="submit">Subscription</button>
+          <button type="submit">Subscription</button> 
         </div>
+        -->
       </div>
     </div>
     <div class="footer">
@@ -66,8 +67,19 @@
   </footer>
 </template>
 <script>
+import axios from "axios";
+
 export default {
   name: "AppFooter",
+  data() {
+    return {
+      category: [],
+    };
+  },
+  async created() {
+    let response = await axios.get("get-links");
+    this.category = response.data.category;
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -76,12 +88,14 @@ footer {
 }
 .footer-header {
   width: 100%;
-  height: 370px;
-  display: flex;
-  padding: 10px 25px;
-  justify-content: space-between;
-  align-items: center;
+  padding: 30px 30px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  align-content: start;
   background-color: #44425a;
+  justify-content: space-between;
   h5 {
     color: #ff6600;
     font-size: 23px;
@@ -94,7 +108,7 @@ footer {
     }
     .icons {
       display: flex;
-      margin-top: 25px;
+      margin-top: 10px;
       gap: 25px;
       a {
         text-decoration: none;
@@ -104,7 +118,7 @@ footer {
       i {
         border-radius: 10px;
         border: 1px solid white;
-        padding: 8px 12px;
+        padding: 6px 8px;
         &:hover {
           background-color: white;
           color: #44425a;
@@ -143,9 +157,10 @@ footer {
       color: white;
     }
     .input {
+      display: flex;
       input,
       button {
-        padding: 15px 20px;
+        padding: 10px 15px;
         border: none;
         outline: none;
       }
@@ -163,13 +178,15 @@ footer {
   .info,
   .links,
   .messages {
-    width: calc(90% / 3);
-    margin: auto;
+    margin: 10px auto;
     padding: 10px;
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .links {
+    padding: 10px 20px;
   }
 }
 
@@ -181,6 +198,33 @@ footer {
   color: white;
   span {
     color: #ff6600;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-header {
+    .messages,
+    .links,
+    .info {
+      margin: 10px;
+    }
+    .messages {
+      .input {
+        input,
+        button {
+          padding: 8px 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-header {
+    padding: 30px 0px 0;
+  }
+  .footer {
+    font-size: 14px;
   }
 }
 </style>

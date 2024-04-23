@@ -1,24 +1,83 @@
 <template>
-  <img src="@/assets/about.jpg" alt="about-img" />
-  <div class="info">
-    <h3>About Us</h3>
-    <h2>Innovative Way To Learn</h2>
-    <p>
-      Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum
-      dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat
-      eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita
-      amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita
-      consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no
-      nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum.
-      Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet
-    </p>
+  <section class="about-section">
+    <img src="@/assets/about.jpg" alt="about-img" />
+    <div class="info">
+      <h3>About Us</h3>
+      <h2>Innovative Way To Learn</h2>
+      <p>
+        Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum
+        dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat
+        eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum
+        clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit
+        dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore
+        invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed
+        sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum
+        stet
+      </p>
 
-    <button class="btn">Learn More</button>
-  </div>
+      <p v-if="more">
+        Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum
+        dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat
+        eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum
+        clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit
+        dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore
+        invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed
+        sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum
+        stet
+      </p>
+      <p v-if="more">
+        Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum
+        dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat
+        eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum
+        clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit
+        dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore
+        invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed
+        sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum
+        stet
+      </p>
+      <p v-if="more">
+        Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum
+        dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat
+        eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum
+        clita amet.
+      </p>
+      <p v-if="more">
+        Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum
+        dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat
+        eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum
+        clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit
+        dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore
+        invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed
+        sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum
+        stet
+      </p>
+      <p v-if="more">
+        Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum
+        dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat
+        eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum
+        clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit
+        dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore
+        invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed
+        sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum
+        stet
+      </p>
+      <p v-if="more">
+        Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum
+        dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat
+        eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum
+        clita amet.
+      </p>
+
+      <button class="btn" v-if="!more">
+        <router-link to="/about"> Learn More </router-link>
+      </button>
+    </div>
+  </section>
 </template>
 <script>
 export default {
   name: "AboutSection",
+  props: ["more"],
 };
 </script>
 <style lang="scss">
@@ -26,15 +85,16 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
   width: 90%;
   margin: 25px auto;
   padding-bottom: 70px;
   padding-top: 70px;
   img {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 300px;
     border-radius: 10px;
+    object-fit: cover;
   }
   .info {
     text-align: left;
@@ -56,8 +116,50 @@ export default {
       letter-spacing: 1px;
     }
     .btn {
-      width: 200px;
-      padding: 15px 0;
+      width: 150px;
+      a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 2px 0;
+        transition: 0.3s;
+        &:hover {
+          color: #ff6600;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 555px) {
+  .about-section {
+    img {
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+
+@media (max-width: 455px) {
+  .about-section {
+    img {
+      width: 335px;
+      height: 335px;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .about-section {
+    img {
+      width: 300px;
+      height: 300px;
     }
   }
 }

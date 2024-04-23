@@ -1,17 +1,13 @@
 <template>
-  <NavBar />
-  <router-view />
-  <AppFooter />
+  <router-view :key="$route.fullPath" />
+  <div class="so-small-screen">
+    <p>sorry but your screen is so small can you open this in large screen</p>
+  </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
-import AppFooter from "@/components/AppFooter.vue";
 export default {
-  components: {
-    NavBar,
-    AppFooter,
-  },
+  components: {},
 };
 </script>
 
@@ -22,6 +18,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  .so-small-screen {
+    display: none;
+  }
 }
 
 nav {
